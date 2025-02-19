@@ -1,1 +1,2 @@
-console.log("Hello");
+import { updateButton } from "./logic.js";
+updateButton();
