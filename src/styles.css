@@ -29,6 +29,10 @@ input {
   background-color: royalblue;
   appearance: none;
 }
+input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
 input:focus {
     border: 1px solid black;
     box-shadow: 0 0 4px black;
