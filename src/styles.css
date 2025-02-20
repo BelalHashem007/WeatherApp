@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+}
+
+body {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #131833;
+}
+.form-container {
+  margin: 20px;
+  grid-area: 1/1/2/3;
+}
+input,
+button {
+  padding: 7px;
+  color: white;
+  border-radius: 9px;
+  border: none;
+}
+input {
+  width: 70%;
+  background-color: royalblue;
+  appearance: none;
+}
+input:focus {
+    border: 1px solid black;
+    box-shadow: 0 0 4px black;
+    outline: none;
+}
+#update-btn {
+  width: 120px;
+  margin-left: 20px;
+}
+.body-container {
+  width: max(60%,800px);
+  height: max(80%,500px);
+  display: grid;
+  grid-template-rows: 1fr 7fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  background-color: #3F51B5;
+}
+.current-weather {
+    margin-left: 30px;
+    color: white;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 250px;
+    margin-top: 125px;
+    background-color: #2196F3;
+    padding: 15px;
+    box-shadow: 0 0 3px black;
+    display: none;
+}
+.current-weather div +div {
+    margin-top: 10px;
+}
+.condition-pic {
+    vertical-align: -10px;
+    display: none;
+}
+button {
+    background-color: #2196F3;
+}
+.current-weather h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.current-weather h1 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  border-style: hidden hidden solid hidden;
+}
+button:hover {
+    cursor: pointer;
+    border: 1px black solid;
+    box-shadow: 1px 1px 1px black;
+    opacity: 0.8;
+}
+.day-img {
+  width: 50px;
+  height: 50px;
+}
+.side-content {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+.day-body {
+  background-color: #2196F3;
+  margin: 15px;
+  padding: 5px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.day-temp {
+  margin-left: auto;
+  margin-right: 15px;
+}
+.day-date {
+  opacity: 0.6;
+}
+.switch-temp {
+  grid-area: 3/1/4/3;
+  width: 165px;
+  height: 50px;
+  justify-self: center;
+  display: none;
+}
+.loading {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
